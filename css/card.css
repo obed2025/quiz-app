@@ -1,0 +1,68 @@
+.card {
+  padding: 1rem;
+  margin-inline: auto;
+  width: 20rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
+  margin-block: 2.5rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  .progress-bar {
+    height: 1rem;
+    background-color: #e0e0e0;
+    overflow: hidden;
+    border-radius: 0.5rem;
+
+    .progress {
+      height: 100%;
+      background-color: #76c7c0;
+    }
+  }
+
+  .options {
+    display: inherit;
+    flex-direction: inherit;
+    gap: 0.5rem;
+
+    label {
+      cursor: pointer;
+      padding: 0.5rem 1rem;
+      background-color: #f0f0f0;
+      border-radius: 0.25rem;
+      transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+      color: #333;
+
+      input {
+        display: none;
+      }
+
+      &:hover {
+        background-color: #d0d0d0;
+      }
+
+      &:has(input:checked) {
+        background-color: #76c7c0;
+        color: white;
+      }
+    }
+
+    .submit {
+      font-family: inherit;
+      font-size: 1.2rem;
+      border: none;
+      background-color: #76c7c0;
+      color: white;
+      border-radius: 0.25rem;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+
+      &:hover {
+        background-color: #68b2ab;
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+#mypopover {
+  margin-inline: auto;
+  border: none;
+  top: 2rem;
+  border-radius: 0.3rem;
+  padding: 1rem;
+  font-size: 110%;
+  color: white;
+
+  h1 {
+    line-height: 1rem;
+  }
+
+  #close {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  button[popovertargetaction='hide'] {
+    font-size: inherit;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: inherit;
+  }
+
+  &.info {
+    background-color: teal;
+  }
+
+  &.error {
+    background-color: tomato;
+  }
+}
+
+button[popovertargetaction='show'] {
+  display: none;
+}
